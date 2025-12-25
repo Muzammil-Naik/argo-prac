@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service:
+metadata:
+  name: demoapp-2-svc
+  labels:
+    app: demoapp-2
+  namespace: demoapp-2
+spec:
+  selector:
+    app: demoapp-2
+  type: NodePort
+  ports:
+    - name: demoapp-ports
+      nodePort: 31001
+      port: 80
+      targetPort: 80
+      protocol: TCP
+
