@@ -4,7 +4,7 @@ metadata:
   labels:
     app: demoapp2
   name: demoapp-dep2
-  namespace: demoapp-ns
+  namespace: auto-sync
 spec:
   replicas: 5
   selector:
