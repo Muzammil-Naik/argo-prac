@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   labels:
     app: demoapp
-  name: demoapp-dep
+  name: demoapp-dep2
   namespace: demoapp-ns
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: demoapp
+      app: demoapp2
   template:
     metadata:
       labels:
-        app: demoapp
+        app: demoapp2
     spec:
       containers:
       - image: thinknyx/demoapp:v1
