@@ -4,7 +4,7 @@ metadata:
   labels:
     app: demoapp2
   name: demoapp-svc2
-  namespace: demoapp-ns
+  namespace: auto-sync
 spec:
   ports:
   - name: demoapp-ports
