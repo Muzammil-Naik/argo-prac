@@ -3,8 +3,8 @@ kind: Service
 metadata:
   labels:
     app: demoapp
-  name: demoapp-svc
-  namespace: demoapp-ns
+  name: demoapp-svc2
+  namespace: demoapp-ns2
 spec:
   ports:
   - name: demoapp-ports
@@ -13,5 +13,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: demoapp
+    app: demoapp2
   type: NodePort
