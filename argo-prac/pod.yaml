@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    env: dev
+  name: demo-pod1
+  namespace: demoapp-ns
+spec: 
+  containers:
+    - name: demo-nginx-pod
+      image: nginx:latest
